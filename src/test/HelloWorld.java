@@ -5,6 +5,18 @@ package test;
  */
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+
+        Cat ourcat = new Cat();
+        ourcat.eat();
+        ourcat.sleep();
+        String say = ourcat.speak("Play with me");
+        System.out.println(say);
+
+        Dog ourdog = new Dog();
+        ourdog.root();
+        ourdog.tailgame();
+        String wow = ourdog.paw("Master!");
+        System.out.println(wow);
+
     }
 }
